@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login & register/style.css">
+    <title>Checkout</title>
+</head>
+<body id="body1">
+    <button type="button" class="small-button back-button" onclick="window.location.href='../index.html';">
+        &#8592; Back to Home
+    </button>
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-header">
+                <h1>Checkout</h1>
+                <div>Please fill in your details to complete the purchase</div>
+            </div>
+            <form class="login-card-form" id="checkoutForm">
+                <div class="form-item">
+                    <input type="text" placeholder="Enter Full Name" id="fullname" required>
+                </div>
+                <div class="form-item">
+                    <input type="email" placeholder="Enter Email" id="email" required>
+                </div>
+                <div class="form-item">
+                    <input type="text" placeholder="Enter Shipping Address" id="address" required>
+                </div>
+                <div class="form-item">
+                    <input type="text" placeholder="Enter City" id="city" required>
+                </div>
+                <div class="form-item">
+                    <input type="text" placeholder="Enter Postal Code" id="postalcode" required>
+                </div>
+                <div class="form-item">
+                    <select id="paymentMethod" class="small-button">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cashOnDelivery">Cash on Delivery</option>
+                    </select>
+                </div>
+                <div class="total">
+                    Total Amount: $0.00
+                </div>
+                <button type="button" class="btn" onclick="placeOrder()">Place Order</button>
+                <div class="success-message" id="successMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get total from localStorage
+            const totalAmount = localStorage.getItem('cartTotal');
+            const totalDisplay = document.querySelector('.total');
+            if (totalAmount) {
+                totalDisplay.textContent = `Total Amount: $${totalAmount}`;
+            }
+        });
+
+        function placeOrder() {
+            const successMessage = document.getElementById("successMessage");
+            successMessage.textContent = "Your order has been placed successfully!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+/* General Reset */
+body, h1, h2, h3, h4, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body and Main Layout */
+body {
+    line-height: 1.6;
+    
+}
+
+/* Header */
+.top-bar {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu .nav-menu:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.navbar .nav-icons a {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: #000;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+.navbar .nav-icons a:hover {
+    color: #007BFF; /*give the the words in nav a blue color when i point on it*/
+    text-decoration: underline;
+}
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+}
+
+/* Submenu Styling */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    min-width: 200px;
+    display: none;
+    z-index: 1000;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Submenu on Hover */
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.navbar .submenu li a {
+    display: flex; /* جعل النص والرمز بمحاذاة أفقية */
+    justify-content: space-between; /* توزيع العناصر بين طرفي العنصر */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    font-size: 16px; /* حجم النص */
+    font-weight: 400; /* وزن النص */
+    color: #333; /* لون النص */
+    padding: 10px 15px; /* إضافة مساحة داخلية */
+    border-bottom: 1px solid #eaeaea; /* خط سفلي لتقسيم العناصر */
+}
+
+.navbar .submenu li a:hover {
+    color: #007BFF; /* تغيير لون النص عند التمرير */
+    transition: color 0.3s ease; /* تأثير سلس */
+}
+
+.navbar .submenu li a span {
+    margin-left: auto; /* نقل السهم إلى أقصى اليمين */
+    font-size: 14px; /* حجم السهم */
+    color: #333; /* لون السهم */
+}
+
+.navbar .submenu li a:hover span {
+    color: #000000; /* تغيير لون السهم عند التمرير */
+}
+/* Sub-submenu Styling */
+.sub-submenu {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    min-width: 200px;
+    display: none;
+    z-index: 1000;
+}
+
+.sub-submenu li {
+    margin: 0;
+}
+
+.sub-submenu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.sub-submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Submenu on Hover */
+.menu > li:hover .submenu,
+.submenu li:hover .sub-submenu {
+    display: block;
+}
+
+/* UPDATING THE VALUE OF ("TOP") */
+#ACCESSORIES-EDIT{
+    top: 18.59%;
+}
+
+#OUTERWEAR{
+    top: 65.30%;
+}
+
+#TROUSERS-EDIT{
+    top: 81%;
+}
+
+#ACCESSORIES-EDIT1{
+    top: 22%;
+}
+
+#TROUSERS-EDIT1{
+    top: 59%;
+}
+
+#TROUSERS-EDIT2{
+    top: 21%;
+}
+
+#WINTER-COLLECTION{
+    top: 11.50%;
+}
+
+#end{
+    color: blue;
+}
+
+#Style-Aura{
+    text-shadow: 0px 2px 4px black;
+    color: #000;
+}
+
+/* login & register */
+.nav-icons #login{
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    color: #000000;
+    border-radius: 40px;
+    border: solid #000000c2 2px;
+    font-weight: 700; /* حجم الخط */
+    transition: 0.4s;
+}
+
+.nav-icons #register{
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #000000;
+    border-radius: 40px;
+    border: solid #000000c2 2px;
+    font-weight: 700; /* حجم الخط */
+    transition: 0.4s;
+}
+/* لتغيير لونه عندما يكون الماوس على الكلمة */
+.nav-icons #login:hover , .nav-icons #register:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    background: url('Assets/hero\ image.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Instagram Section */
+.instagram-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.instagram-gallery {
+    display:block;
+    gap: 10px;
+    padding: 20px;
+}
+
+.instagram-gallery img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.newsletter h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-sections h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-sections ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-sections ul li a:hover {
+    color: #fff;
+}
+.face {
+    height: 15px;
+    width: 20px;
+}
+.insta {
+    height: 15px;
+    width: 20px;
+}
+.TikTok {
+    height: 15px;
+    width: 20px;
+}
+.YouTube {
+    height: 15px;
+    width: 20px;
+}
+.payment-methods {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    margin: 0 10px;
+    width: 50px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+/*------------------------------------------About----------------------------------*/
+/* General Reset */
+body, h1, h2, h3, h4, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+/* Header */
+.top-bar {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #007BFF;
+}
+
+.navbar .nav-icons a {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-icons a:hover {
+    color: #007BFF;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.about p strong {
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-sections h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-sections ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-sections ul li a:hover {
+    color: #fff;
+}
+
+.payment-methods {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    margin: 0 10px;
+    width: 50px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-sections .section p{
+    text-align: left;
+}
+
+
+
+/* ميديا كواااااايري */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none; /* إخفاء القائمة في الوضع الطبيعي */
+        background-color: #fff;
+    }
+
+    .menu.active {
+        display: flex; /* إظهار القائمة عند الحاجة */
+    }
+
+    .menu > li {
+        margin: 10px 0;
+    }
+
+    .menu > li > a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
